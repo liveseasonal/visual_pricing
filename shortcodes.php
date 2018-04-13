@@ -1,4 +1,3 @@
-
 <?php 
 $textdoimain = 'alba';
 $alba_redux_demo = get_option('redux_demo');
@@ -502,12 +501,16 @@ function pricing2_func($atts, $content = null){
                         <div class="slider-price">
                             <p class="small"><span class="bold value"></span> <?php echo htmlspecialchars_decode(esc_attr($slider));?></p>
 
+
+<!-- Changing the default value of the slider from 1-20 to 1 -150 . This will be visable on the pricing page -->
+
+
                             <input type="text"
                                    data-toggle="slider"
-                                   data-slider-min="21"
-                                   data-slider-max="99"
+                                   data-slider-min="1"
+                                   data-slider-max="150"
                                    data-slider-step="1"
-                                   data-slider-value="50"
+                                   data-slider-value="20"
                                    data-slider-tooltip="hide"/>
                         </div>
 
@@ -527,7 +530,13 @@ function pricing2_func($atts, $content = null){
             <?php if($detail5){ ?>
                 <li class="<?php if($check5 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail5));?></li>
                 <?php } ?>
-            <?php if($detail6){ ?>
+
+
+
+<!-- Added extra fields to the prcing best value fields -->
+
+
+                <?php if($detail6){ ?>
                 <li class="<?php if($check6 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail6));?></li>
                 <?php } ?>
             <?php if($detail7){ ?>
@@ -563,6 +572,7 @@ function pricing2_func($atts, $content = null){
                 <?php } ?>    
 
 
+
                         </ul>
 
                         <a href="<?php echo esc_url($link); ?>" class="btn btn-rounded btn-accent py-3 px-5"><?php echo htmlspecialchars_decode(esc_attr($textbutton));?></a>
@@ -583,12 +593,18 @@ function pricing2_func($atts, $content = null){
             <div class="slider-price">
                 <p class="small"><span class="bold value"></span> <?php echo htmlspecialchars_decode(esc_attr($slider));?></p>
 
+
+
+<!-- Changing the default value of the slider from 1-20 to 1 -150 -->
+
+
+
                 <input type="text"
                        data-toggle="slider"
                        data-slider-min="1"
-                       data-slider-max="20"
+                       data-slider-max="150"
                        data-slider-step="1"
-                       data-slider-value="10"
+                       data-slider-value="20"
                        data-slider-tooltip="hide"/>
             </div>
 
@@ -612,7 +628,7 @@ function pricing2_func($atts, $content = null){
 
 
 
-<!-- Added for extended fields in the pricing page. Displayed on front end . See also vs_shortcode.php around line 810 -->
+            <!-- Added for extended fields in the pricing page. Displayed on front end . See also vs_shortcode.php around line 810 -->
 
 
 
@@ -651,12 +667,10 @@ function pricing2_func($atts, $content = null){
             <?php if($detail15){ ?>
                 <li class="<?php if($check15 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail15));?></li>
                 <?php } ?> 
+    
 
 
-
-
-
-
+                
             </ul>
 
             <a href="<?php echo esc_url($link); ?>" class="btn btn-rounded btn-outline-3 py-3 px-5"><?php echo htmlspecialchars_decode(esc_attr($textbutton));?></a>
