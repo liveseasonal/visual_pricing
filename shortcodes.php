@@ -608,6 +608,55 @@ function pricing2_func($atts, $content = null){
             <?php if($detail5){ ?>
                 <li class="<?php if($check5 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail5));?></li>
                 <?php } ?>
+
+
+
+
+<!-- Added for extended fields in the pricing page. Displayed on front end . See also vs_shortcode.php around line 810 -->
+
+
+
+
+            <?php if($detail6){ ?>
+                <li class="<?php if($check6 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail6));?></li>
+                <?php } ?>
+            <?php if($detail7){ ?>
+                <li class="<?php if($check5 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail7));?></li>
+                <?php } ?>
+
+
+
+                <?php if($detail8){ ?>
+                <li class="<?php if($check8 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail8));?></li>
+                <?php } ?>
+            <?php if($detail9){ ?>
+                <li class="<?php if($check9 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail9));?></li>
+                <?php } ?>
+            <?php if($detail10){ ?>
+                <li class="<?php if($check10 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail10));?></li>
+                <?php } ?>
+            <?php if($detail11){ ?>
+                <li class="<?php if($check11 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail11));?></li>
+                <?php } ?>
+            <?php if($detail12){ ?>
+                <li class="<?php if($check12 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail12));?></li>
+                <?php } ?>
+            <?php if($detail13){ ?>
+                <li class="<?php if($check13 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail13));?></li>
+                <?php } ?>
+
+            <?php if($detail14){ ?>
+                <li class="<?php if($check14 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail14));?></li>
+                <?php } ?>
+            <?php if($detail15){ ?>
+                <li class="<?php if($check15 ==''){echo esc_html__('strike','alba');} ?> "><?php echo htmlspecialchars_decode(esc_attr($detail15));?></li>
+                <?php } ?> 
+
+
+
+
+
+
             </ul>
 
             <a href="<?php echo esc_url($link); ?>" class="btn btn-rounded btn-outline-3 py-3 px-5"><?php echo htmlspecialchars_decode(esc_attr($textbutton));?></a>
